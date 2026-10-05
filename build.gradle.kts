@@ -26,6 +26,9 @@ tasks.withType<JavaCompile>().configureEach {
     options.release.set(21)
 }
 tasks.test { useJUnitPlatform() }
+tasks.register("printVersion") {
+    doLast { println(project.version) }
+}
 tasks.processResources {
     inputs.property("version", project.version)
     filesMatching("extension.yml") { expand("version" to project.version) }
@@ -34,7 +37,5 @@ tasks.jar {
     archiveBaseName.set("GeyserCheckSkin")
     isPreserveFileTimestamps = false
     isReproducibleFileOrder = true
-    from("GEYSER-LICENSE.txt") { into("META-INF/licenses") }
     from("LICENSE") { into("META-INF") }
-    from("THIRD_PARTY_NOTICES.md") { into("META-INF") }
 }
