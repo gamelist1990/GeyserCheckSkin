@@ -1,0 +1,6 @@
+id: geyser-check-skin
+name: GeyserCheckSkin
+main: com.pexserver.checkskin.CheckSkinExtension
+api: 2.11.3
+version: ${version}
+authors: [gamelist1990]

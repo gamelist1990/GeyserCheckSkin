@@ -1,0 +1,22 @@
+{
+  "enabled": true,
+  "geometryMode": "MINOR",
+  "violationAction": "FALLBACK",
+  "allowPersona": false,
+  "transparencyCheck": true,
+  "alphaThreshold": 200,
+  "minimumBodyOpacity": 0.95,
+  "minimumFaceOpacity": 0.80,
+  "maxGeometryBytes": 1048576,
+  "maxBones": 64,
+  "maxCubes": 128,
+  "decorationMargin": 2.0,
+  "maxDecorationSurfaceArea": 512.0,
+  "fallbackFiles": [
+    "fallbacks/skin1.png",
+    "fallbacks/skin2.png",
+    "fallbacks/skin3.png"
+  ],
+  "kickMessage": "このスキンは使用できません。通常のスキンに変更してください。",
+  "logViolations": true
+}
